@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ahref <- function(href, text){
   sprintf('<a href="%s">%s</a>', href, text)
 }
-library(data.table)
+suppressPackageStartupMessages(library(data.table))
 ```
 
 ```{r}
@@ -41,13 +41,15 @@ myread <- function(csv, repo.col){
     "repo")
   ][]
 }
+repos_dt <- fread("repos.txt",col.names="viz_owner_repo",header=FALSE)
 meta.dt <- myread("meta.csv")[, let(
   source.link = ahref(source, "source"),
   video.link = ifelse(video=="", "", ahref(video,  "video"))
 )][
 , links := paste(repo.link, source.link, video.link)
 ][
-  order(-add.POSIXct)
+  repos_dt, on="viz_owner_repo"
+  ##order(-add.POSIXct)
 ]
 error.dt <- myread("error.csv", "viz_owner_repo")
 ```
