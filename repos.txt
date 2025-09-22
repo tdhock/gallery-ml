@@ -5,7 +5,7 @@ tdhock/2023-12-27-train-sizes-classification
 tdhock/2023-12-26-train-sizes-regression
 tdhock/2023-12-13-train-predict-subsets-classification
 tdhock/2023-12-13-train-predict-subsets-regression
-tdhock/2025-09-22-degree-neighbors-table/
+tdhock/2025-09-22-degree-neighbors-table
 tdhock/2023-12-04-degree-neighbors
 tdhock/2023-12-04-capacity-polynomial-degree-several-patterns
 tdhock/2020-02-03-capacity-polynomial-degree
