@@ -6,7 +6,7 @@ output:
 ---
 
 This is a gallery of data visualizations related to machine learning,
-which have been creating using the R package
+which have been created using the R package
 [animint2](https://github.com/animint/animint2).
 
 ```{r Ropts, echo=FALSE}
