@@ -5,10 +5,6 @@ output:
     self_contained: false
 ---
 
-This is a gallery of data visualizations related to machine learning,
-which have been created using the R package
-[animint2](https://github.com/animint/animint2).
-
 ```{r Ropts, echo=FALSE}
 options(width=200)
 knitr::opts_chunk$set(
@@ -53,6 +49,10 @@ meta.dt <- myread("meta.csv")[, let(
 ]
 error.dt <- myread("error.csv", "viz_owner_repo")
 ```
+
+This is a gallery of `r nrow(meta.dt)` data visualizations related to machine learning,
+which have been created using the R package
+[animint2](https://github.com/animint/animint2).
 
 ```{r}
 knitr::kable(meta.dt[, .(
