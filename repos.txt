@@ -1,6 +1,6 @@
 tdhock/2024-11-27-decision-tree-spam
 tdhock/2024-11-23-greedy-decision-tree
-tdhock/2024-09-16-K-fold-CV-train-sizes-regression
+tdhock/2026-09-16-K-fold-CV-train-sizes-regression
 tdhock/2023-12-27-train-sizes-classification
 tdhock/2023-12-26-train-sizes-regression
 tdhock/2023-12-13-train-predict-subsets-classification
